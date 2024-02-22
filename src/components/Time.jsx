@@ -40,7 +40,7 @@ export default function Time({ d, val }) {
         {d}
       </Text>
       <Text
-        px={["10px", "30px"]}
+        px={["11px", "30px"]}
         fontSize="30px"
         fontWeight="bold"
         color="white"
