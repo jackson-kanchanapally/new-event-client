@@ -17,19 +17,19 @@ export default function Ticket() {
           justifyContent="center"
           direction="column"
           ml={["10px", "240px"]}
-          mt={["", "70px"]}
+          mt={["", "150px"]}
         >
-          <Box ml="30px" mt="150px">
+          <Box fontSize={["16px"]} ml="30px" mt="150px">
             <Text color="yellow.500" fontSize={["", "15px"]} letterSpacing="0.2em">
               SACHI EVENTS PRESENT
             </Text>
             <Heading fontSize={["6xl", "75px"]} color="white" fontWeight="">
-              MISS VS MRS
+              MISS VS MS
             </Heading>
             <Heading fontSize={["4xl", "50px"]} color="white" fontWeight="thin">
               WOMEN'S DAY 2024
             </Heading>
-            <Box mt={["40px"]} color="gray.300">
+            <Box mt={["40px"]} color="#505154">
               <Text>
                 3 Day FREE Event For this Women's Day For all the Daughters,
               </Text>
