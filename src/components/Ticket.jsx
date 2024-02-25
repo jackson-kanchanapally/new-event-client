@@ -1,58 +1,48 @@
 import { Box, Flex, Text, Heading, Button } from "@chakra-ui/react";
-import Carosel from "./Carosel";
-import { Link } from "react-router-dom";
+import ButtonD from "./Button";
 export default function Ticket() {
   return (
     <Flex direction="column">
       <Box
         w="100vw"
-        h={["60vh", "80vh"]}
-        backgroundImage="url('bg3-1.jpg')"
+        h={["100vh", "100vh"]}
+        // backgroundImage="url('bg3-1.jpg')"
         backgroundSize="cover"
         backgroundPosition="center"
-        color="black"
+        color="white"
       >
         <Flex
-          alignItems="center"
           w="100vw"
           h="64vh"
           justifyContent="center"
           direction="column"
+          ml={["10px", "240px"]}
           mt={["", "70px"]}
         >
-          <Text color="black" fontSize={["", "28px"]} >
-            Friday, March 8th
-          </Text>
-          <Heading
-            fontSize={["6xl", "6xl"]}
-            mb="5"
-            textAlign="center"
-            px={["40px", ""]}
-            color="black" 
-           
-          >
-            Women's Day 2024
-          </Heading>
-          <Link to="/register">
-            <Button
-             
-              h="45px"
-              w={["135px"]}
-              bg="black"
-              py="2px"
-              color="white"
-              _hover={{
-                bg: "white",
-                color: "black",
-              }}
-            >
-              Register Now
-            </Button>
-          </Link>
+          <Box ml="30px" mt="150px">
+            <Text color="yellow.500" fontSize={["", "18px"]} letterSpacing="0.2em">
+              SACHI EVENTS PRESENT
+            </Text>
+            <Heading fontSize={["6xl", "75px"]} color="white" fontWeight="">
+              MISS VS MRS
+            </Heading>
+            <Heading fontSize={["4xl", "50px"]} color="white" fontWeight="thin">
+              WOMEN'S DAY 2024
+            </Heading>
+            <Box mt={["40px"]} color="gray.300">
+              <Text>
+                3 Day FREE Event For this Women's Day For all the Daughters,
+              </Text>
+              <Text>Mothers,Sisters,Friends, and YOU!</Text>
+              <Text color="yellow.500" fontSize={["22px"]}>
+                March 8,9,10
+              </Text>
+              <Text>Live music, Dance & Fun games Await</Text>
+              <Text>Exhibition of 200+ Stalls, FREE Entry!</Text>
+            </Box>
+          <ButtonD/>
+          </Box>
         </Flex>
-        <Box mt={["-100px", "-30px"]}>
-          <Carosel />
-        </Box>
       </Box>
     </Flex>
   );

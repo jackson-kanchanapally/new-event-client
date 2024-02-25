@@ -10,22 +10,28 @@ export default function SachiEvent() {
       direction="column"
       color="black"
       mb={["30px"]}
+      bg="white"
+      h={["100vh"]}
       alignItems={["center", "center"]}
     >
       <Box w={["85%", "70%"]}>
         <Box>
-          <Text fontSize="25px" textAlign={["center"]}>
-            Sachi Media brings to you
+          <Text letterSpacing="0.2em" fontSize="18px" color="yellow.500">
+            SACHI MEDIA BRINGS TO YOU
           </Text>
-          <Heading fontSize={["40px", "45px"]} textAlign={["center"]}>
+          <Heading fontSize={["40px", "45px"]} fontWeight="0.5rem">
             Ms. Vs Mrs. Event
           </Heading>
-          <Text fontSize="20px" px={["50px", ""]} textAlign={["center"]}>
+          <Text fontSize="20px">
             A Grand 3-Day Event at Chennai. March 8, 9, & 10.
           </Text>
         </Box>
 
-        <Flex justifyContent="center" ml="20px" direction={["column-reverse","row"]}>
+        <Flex
+          justifyContent="center"
+          ml="20px"
+          direction={["column-reverse", "row"]}
+        >
           <Box ml={["", "70px"]} w={["75vw", "58vw"]}>
             <Flex mb={["", "15px"]}>
               <Text
