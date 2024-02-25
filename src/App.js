@@ -12,7 +12,7 @@ export default function App() {
   return (
     <ChakraProvider>
       {/* {isLargerThan800 && <UpNav />} */}
-      <Box maxW="100%" overflowX="hidden" bg="black">
+      <Box maxW="100%" overflowX="hidden" bg="#161616">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,9 +1,10 @@
 import React from "react";
-import { Box, Flex, Button } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 export default function ButtonD() {
   return (
     <Flex
-      bg="yellow.500"
+      bg="
+      #ffa800"
       h={["60px"]}
       w={["180px"]}
       mt="30px"
@@ -14,7 +15,8 @@ export default function ButtonD() {
     >
       <Box
         fontSize={["25px"]}
-        bg="yellow.600"
+        bg="
+        #d98f00"
         w={["32px"]}
         h="100%"
         pt={["8px"]}
@@ -23,15 +25,15 @@ export default function ButtonD() {
         borderWidth="0px"
         borderRadius="lg"
         style={{
-          borderTopLeftRadius: "0px",
-          borderBottomLeftRadius: "0px",
+          borderTopLeftRadius: "5px",
+          borderBottomLeftRadius: "5px",
           borderTopRightRadius: "30px",
           borderBottomRightRadius: "30px",
         }}
       >
         +
       </Box>
-      <Box fontWeight="semibold" ml={["10px"]}>
+      <Box fontWeight="600" ml={["10px"]}>
         DISCOVER MORE
       </Box>
     </Flex>

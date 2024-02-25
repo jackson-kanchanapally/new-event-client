@@ -2,7 +2,8 @@ import { Flex, Box } from "@chakra-ui/react";
 import React from "react";
 import Ticket from "./Ticket";
 import SachiEvent from "./SachiEvent";
-import JoinUs from "./JoinUs";
+import AboutUs from "./AboutUs";
+import AboutWomen from "./AboutWomen";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Ticket />
       <Box pt={["70px","50px"]}>
       <SachiEvent />
-        <JoinUs/>
-       
+        {/* <JoinUs/> */}
+       <AboutUs/>
+       <AboutWomen/>
       </Box>
       </Box>
     </Flex>

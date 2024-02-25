@@ -1,105 +1,104 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Circle, Flex, Heading,  Text } from "@chakra-ui/react";
 import React from "react";
+import ButtonD from "./Button";
 export default function AboutUs() {
   return (
     <Flex
       pb={["35px"]}
-      pt={["35px"]}
-      bgGradient='linear(to-b, purple.400, purple.200, purple.50)'
-      justifyContent="center"
-     
+      mt={["85px"]}
+      // justifyContent="center"
+      alignItems="center"
+      direction="column"
+      ml={["15px", "0"]}
+      h={["110vh","100vh"]}
+      w={["90vw", "100vw"]}
     >
-      <Box
-        w={["", "55vw"]}
-        ml={["40px", "15px"]}
-        mr={["40px", "40px"]}
-        color="black"
-      >
-        <Heading textAlign="center" fontSize="40px">
-          About Sachi Events
+      <Box>
+        <Heading
+          textAlign="center"
+          fontSize={["19px"]}
+          color="yellow.500"
+          letterSpacing="0.2em"
+          fontWeight=""
+        >
+          SACHI EVENTS
         </Heading>
-        <Box w={["", "60vw"]} mt={["40px"]} textAlign={["justify", ""]}>
-          <Text fontSize="20px">
-            Turn your dream events into a reality with Sachi. Whether you
-            envision an indoor or outdoor celebration, we bring your vision to
-            life, allowing you to relax and savour the occasion.
+        <Box fontSize={["16px","22px"]} mt={["15px"]} textAlign={["center"]}>
+          <Text color="white">
+            Turn your dream events into a reality with Sachi.
           </Text>
-          <Box mt={["20px", "35px"]} ml={["", "30px"]}>
-            <Flex mb={["30px"]}>
-              <Flex
-                w={["100px", "70px"]}
-                h={["55px", "70px"]}
-                justifyContent="center"
-                alignItems="center"
-                borderRadius="full"
-                bg="white"
-                boxShadow="lg"
-                mt={["10px", ""]}
-              >
-                <Image src="vision.png" alt="Vision" w={["50px", "60px"]} />
-              </Flex>
-              <Box ml={["26px", "20px"]} mt={["", "18px"]}>
-                <Text fontWeight="bold" fontSize="18px">
-                  Our Vission :
-                </Text>
-                <Text fontSize="18px">
-                  To redefine the industry by architecting captivating events
-                  that inspire.
-                </Text>
-              </Box>
-            </Flex>
-            <Flex mb={["30px"]}>
-              <Flex
-                w={["100px", "70px"]}
-                h={["60px", "70px"]}
-                justifyContent="center"
-                alignItems="center"
-                borderRadius="full"
-                bg="white"
-                boxShadow="lg"
-                mt={["10px", ""]}
-              >
-                <Image src="mission.png" alt="Mission" w={["50px", "60px"]} />
-              </Flex>
-              <Box ml={["20px"]} mt={["", "18px"]}>
-                <Text fontWeight="bold" fontSize="18px">
-                  Our Mission :
-                </Text>
-                <Text fontSize="18px">
-                  To foster positive change in society through exceptional
-                  events.
-                </Text>
-              </Box>
-            </Flex>
-            <Flex mb={["30px"]}>
-              <Flex
-                w={["65px", "70px"]}
-                h={["65px", "70px"]}
-                justifyContent="center"
-                alignItems="center"
-                borderRadius="full"
-                bg="white"
-                boxShadow="lg"
-              >
-                <Image src="way.png" alt="Our Way" w={["50px", "60px"]} />
-              </Flex>
-              <Box ml={["20px"]} mt={["", "10px"]}>
-                <Text fontWeight="bold" fontSize="18px">
-                  Our Way :
-                </Text>
-                <Text fontSize="18px">
-                  Experiences Designed for Today's Clientele
-                </Text>
-              </Box>
-            </Flex>
-          </Box>
-          <Text fontSize={["20px"]}>
-            For us, events are not just moments but opportunities for
-            transformation. We believe in the power of gatherings to inspire,
-            educate, and connect people. Join us in creating significant
-            memories.
+          <Text color="white">
+            Whether you envision an indoor or outdoor celebration,
           </Text>
+          <Text color="white">
+            We bring your vision to life, allowing you to relax and savour the
+            occasion.
+          </Text>
+          <Flex
+            mt={["20px", "65px"]}
+            ml={["15%", "0"]}
+            justifyContent={["", "space-between"]}
+            alignItems={["center", ""]}
+            direction={["column", "row"]}
+            w={["65vw"]}
+          >
+            <Flex direction={["column"]} alignItems="center" w={["90vw","26%"]}>
+              <Circle
+                bg="#ffa800"
+                w={["170px"]}
+                h={["170px"]}
+                fontSize={["28px"]}
+                color="black"
+                mt={["20px",""]}
+                p="7"
+                fontWeight="500"
+              >
+                OUR VISION
+              </Circle>
+              <Text mt={["10px", "20px"]} fontSize={["15px","20px"]}>
+                To redefine the industry by architecting captivating events that
+                inspire.
+              </Text>
+            </Flex>
+            <Flex direction={["column"]} alignItems="center" w={["90vw","26%"]}>
+              <Circle
+               bg="#ffa800"
+               w={["170px"]}
+               h={["170px"]}
+               fontSize={["28px"]}
+               color="black"
+               p="7"
+               mt={["20px",""]}
+               fontWeight="500"
+              >
+                OUR MISSION
+              </Circle>
+              <Text mt={["10px", "20px"]} fontSize={["15px","20px"]}>
+                To foster positive change in society through exceptional events.
+              </Text>
+            </Flex>
+            <Flex direction={["column"]} alignItems="center" w={["90vw","26%"]}>
+              <Circle
+                bg="#ffa800"
+                w={["170px"]}
+                h={["170px"]}
+                fontSize={["28px"]}
+                color="black"
+                p="7"
+                mt={["20px",""]}
+                fontWeight="500"
+              >
+                OUR WAY
+              </Circle>
+              <Text mt={["10px", "20px"]} fontSize={["15px","20px"]}>
+                Experiences Designed for Today's Clientele
+              </Text>
+            </Flex>
+          </Flex>
         </Box>
+      </Box>
+      <Box mt={["54px","170px"]}>
+        <ButtonD />
       </Box>
     </Flex>
   );

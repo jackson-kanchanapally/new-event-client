@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Heading, Button } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 import ButtonD from "./Button";
 export default function Ticket() {
   return (
@@ -20,7 +20,7 @@ export default function Ticket() {
           mt={["", "70px"]}
         >
           <Box ml="30px" mt="150px">
-            <Text color="yellow.500" fontSize={["", "18px"]} letterSpacing="0.2em">
+            <Text color="yellow.500" fontSize={["", "15px"]} letterSpacing="0.2em">
               SACHI EVENTS PRESENT
             </Text>
             <Heading fontSize={["6xl", "75px"]} color="white" fontWeight="">
