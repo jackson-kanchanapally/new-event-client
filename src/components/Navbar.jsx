@@ -1,8 +1,6 @@
 import {
   Flex,
-  Heading,
   HStack,
-  Spacer,
   Text,
   Menu,
   MenuButton,
@@ -27,13 +25,14 @@ export default function Navbar() {
   return (
     <Flex
       height={["90px"]}
-      w={["100vw"]}
+      w={["100%"]}
       alignItems="center"
       pl={["20px", "200px"]}
       justifyContent={["", "center"]}
       bg="transparent"
       borderBottom="1px solid white"
       position="absolute"
+      overflow="hidden"
     >
       <Link to="/">
         <Image src="logo.png" w={["90px"]} mr={["20px"]} />

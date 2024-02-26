@@ -11,8 +11,7 @@ import AboutCompetitions from "./components/AboutCompitions";
 export default function App() {
   return (
     <ChakraProvider>
-      {/* {isLargerThan800 && <UpNav />} */}
-      <Box maxW="100%" overflowX="hidden" bg="#161616">
+      <Box maxW="100vw" overflowX="hidden" bg="#161616">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

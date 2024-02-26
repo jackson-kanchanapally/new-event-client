@@ -10,6 +10,7 @@ export default function Ticket() {
         backgroundSize="cover"
         backgroundPosition="center"
         color="white"
+        overflowX="hidden"
       >
         <Flex
           w="100vw"
