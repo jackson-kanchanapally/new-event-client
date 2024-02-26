@@ -11,7 +11,7 @@ export default function AboutWomen() {
       color="black"
       alignItems="center"
     >
-      <Image src="vec.png" pos="absolute" w="434px" left="0" mt="100px"/>
+      <Image src="vec.png" pos="absolute" w="464px" left="0" mt="100px"/>
       <Box
         mt={isLargerThan800 ? "8%" : "16%"}
         w={isLargerThan800 ? "50vw" : "90vw"}
