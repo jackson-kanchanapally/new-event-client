@@ -27,7 +27,7 @@ export default function Navbar() {
       height={["90px"]}
       w={["100%"]}
       alignItems="center"
-      pl={["20px", "200px"]}
+      pl={["20px", "160px"]}
       justifyContent={["", "center"]}
       bg="transparent"
       borderBottom="1px solid white"
@@ -40,7 +40,13 @@ export default function Navbar() {
 
       {isLargerThan800 ? (
         <>
-          <HStack spacing={["40px"]} mr={["25px"]} h="38px" color="white">
+          <HStack
+            spacing={["40px"]}
+            mr={["25px"]}
+            h="38px"
+            color="white"
+            fontSize={["16px"]}
+          >
             <Flex
               alignItems="center"
               fontWeight="500"
@@ -48,7 +54,12 @@ export default function Navbar() {
               borderBottom={pathname === "/" && "2px solid #D69E2E"}
             >
               <Link to="/">
-                <Text color={pathname === "/" && "yellow.500"}>HOME</Text>
+                <Text
+                  fontSize={["16px"]}
+                  color={pathname === "/" && "yellow.500"}
+                >
+                  Home
+                </Text>
               </Link>
             </Flex>
             <Flex
@@ -58,7 +69,7 @@ export default function Navbar() {
               fontWeight="500"
             >
               <Link to="/about">
-                <Text color={pathname === "/about" && "yellow.500"}>ABOUT</Text>
+                <Text color={pathname === "/about" && "yellow.500"}>About</Text>
               </Link>
             </Flex>
             <Flex
@@ -69,7 +80,7 @@ export default function Navbar() {
             >
               <Link to="/competition">
                 <Text color={pathname === "/competition" && "yellow.500"}>
-                  COMPETITIONS
+                  Competitions
                 </Text>
               </Link>
             </Flex>
@@ -81,7 +92,7 @@ export default function Navbar() {
             >
               <Link to="/register">
                 <Text color={pathname === "/register" && "yellow.500"}>
-                  REGISTRATION
+                  Registration
                 </Text>
               </Link>
             </Flex>
@@ -93,7 +104,7 @@ export default function Navbar() {
             >
               <Link to="/contactUs">
                 <Text color={pathname === "/contactUs" && "yellow.500"}>
-                  CONTACT
+                  Contact
                 </Text>
               </Link>
             </Flex>
@@ -109,7 +120,7 @@ export default function Navbar() {
               <Box fontSize="15px">For booking up the stalls Contact</Box>
               <Box fontSize="20px">+91 90329 44441</Box>
             </Flex>
-            <Box bg="yellow.500" h="90px" w="90px" fontSize="45px" p="5">
+            <Box bg="yellow.500" h="90px" w="90px" fontSize="35px" p="6">
               <FiPhoneCall />
             </Box>
           </Flex>

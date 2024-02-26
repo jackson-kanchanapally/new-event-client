@@ -1,41 +1,47 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Circle, Flex } from "@chakra-ui/react";
 export default function ButtonD() {
   return (
     <Flex
-      bg="
-      #ffa800"
       h={["60px"]}
-      w={["180px"]}
+      w={["230px"]}
       mt="30px"
-      fontSize="15px"
-      color="black"
-      alignItems="center"
-      rounded="5px"
+      bg="
+    #ffa800"
+      borderWidth="0px"
+      borderRadius="lg"
+      style={{
+        borderTopRightRadius: "5px",
+        borderBottomRightRadius: "5px",
+        borderTopLeftRadius: "30px",
+        borderBottomLeftRadius: "30px",
+      }}
     >
-      <Box
+      <Circle
         fontSize={["25px"]}
-        bg="
-        #d98f00"
-        w={["32px"]}
-        h="100%"
-        pt={["8px"]}
-        pl={["4px"]}
+        bg="#D98F00"
+        w={["60px"]}
+        h={["60px"]}
+        textAlign="center"
+        rounded="100%"
         fontWeight={["bold"]}
-        borderWidth="0px"
-        borderRadius="lg"
-        style={{
-          borderTopLeftRadius: "5px",
-          borderBottomLeftRadius: "5px",
-          borderTopRightRadius: "30px",
-          borderBottomRightRadius: "30px",
-        }}
+        color="black"
+        pb={["4px"]}
       >
         +
-      </Box>
-      <Box fontWeight="600" ml={["10px"]}>
-        DISCOVER MORE
-      </Box>
+      </Circle>
+      <Flex
+        bg="
+      #ffa800"
+        fontSize="15px"
+        color="black"
+        alignItems="center"
+        rounded="5px"
+      >
+        <Box ml={["25px"]}   fontFamily="oswald"  fontSize="18px">
+          DISCOVER MORE
+        </Box>
+      </Flex>
     </Flex>
   );
 }

@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Box,useMediaQuery } from "@chakra-ui/react";
+import { Flex, Heading, Text, Box, useMediaQuery, Image } from "@chakra-ui/react";
 import React from "react";
 
 export default function AboutWomen() {
@@ -8,29 +8,63 @@ export default function AboutWomen() {
       direction="column"
       bg="white"
       h="120vh"
-     
       color="black"
       alignItems="center"
     >
-      <Box mt={isLargerThan800?"8%":"16%"} w={isLargerThan800?"50vw":"90vw"} textAlign={"center"} >
-        <Heading textAlign="center" m="auto" w={!isLargerThan800?"90vw":"40vw"}>
-          WOMEN'S RESILIENCE IN RADIANCE
+      <Image src="vec.png" pos="absolute" w="434px" left="0" mt="100px"/>
+      <Box
+        mt={isLargerThan800 ? "8%" : "16%"}
+        w={isLargerThan800 ? "50vw" : "90vw"}
+        textAlign={"center"}
+      >
+        <Heading
+          textAlign="center"
+          m="auto"
+          fontFamily="oswald"
+          fontSize={["32px"]}
+          w={!isLargerThan800 ? "90vw" : "40vw"}
+        >
+          Women’s Resilience <br /> in Radiance
         </Heading>
-        <Text mt={["20px"]} fontSize={!isLargerThan800?"16px":"20px"} >
+        <Text
+          mt={["20px"]}
+          fontFamily="oswald"
+          fontSize={!isLargerThan800 ? "16px" : "20px"}
+        >
           From shaping societies,nurturing families,contributing in various
           fields,
           <br /> Womenhood is about strength,resilience, and navigating life
           with grace.
         </Text>
       </Box>
-      <Box mt={!isLargerThan800?"8%":"4%"} w={!isLargerThan800?"90vw":"50vw"} textAlign={"center"} >
-        <Heading textAlign="center" m="auto" w={!isLargerThan800?"90vw":"40vw"} fontWeight="500">
-          LET'S CELEBRATE THE ESSESNCE OF
+      <Box
+        mt={!isLargerThan800 ? "8%" : "4%"}
+        w={!isLargerThan800 ? "90vw" : "50vw"}
+        textAlign={"center"}
+      >
+        <Heading
+          textAlign="center"
+          m="auto"
+          w={!isLargerThan800 ? "90vw" : "40vw"}
+          fontWeight="300"
+          fontFamily="oswald"
+        >
+          Let’s celebrate the essence of
         </Heading>
-        <Heading textAlign="center" m="auto" w={!isLargerThan800?"90vw":"40vw"}>
-          WOMENHOOD.
+        <Heading
+          textAlign="center"
+          m="auto"
+          fontFamily="oswald"
+          fontWeight="500"
+          w={!isLargerThan800 ? "90vw" : "40vw"}
+        >
+          Womanhood.
         </Heading>
-        <Text mt={["20px"]} fontSize={!isLargerThan800?"16px":"20px"}>
+        <Text
+          fontFamily="oswald"
+          mt={["20px"]}
+          fontSize={!isLargerThan800 ? "16px" : "20px"}
+        >
           This Women's Day honours women's strength, resilience, and
           achievements.
           <br /> Women, being our cute daughters, sweet sisters, loving wives,
