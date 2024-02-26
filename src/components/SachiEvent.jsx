@@ -16,7 +16,7 @@ export default function SachiEvent() {
       // alignItems={["center", "center"]}
     >
       <Image
-        src="schi.png"
+        src="Schi.png"
         pos="absolute"
         w={["322px"]}
         pt={["40px", "50px"]}
@@ -51,7 +51,7 @@ export default function SachiEvent() {
             fontSize={["15px", "17px"]}
             color="gray.500"
           >
-            <Flex mb={["", "15px"]}>
+            <Flex mb={["0", "15px"]}>
               <Text
                 mt="40px"
                 // fontSize="20px"
@@ -62,24 +62,24 @@ export default function SachiEvent() {
                 and adorable mothers, are the source of immense strength.
               </Text>
             </Flex>
-            <Flex mb={["", "15px"]}>
+            <Flex mb={["0", "15px"]}>
               <Text mb="18px" textAlign={["justify", ""]}>
                 Empowering Women Entrepreneurs, One Generation at a Time!
               </Text>
             </Flex>
-            <Flex mb={["", "15px"]}>
+            <Flex mb={["0", "15px"]}>
               <Text mb="18px" textAlign={["justify", ""]}>
                 Let us celebrate the spirit of womanhood. Sharpen your skills by
                 joining the competitions and cheering each other on. Discover
                 your power to impact.
               </Text>
             </Flex>
-            <Box mt={["", "60px"]}>
+            <Box mt={["0", "60px"]}>
               <ButtonD />
             </Box>
           </Box>
           <Image
-            src="VWom.png"
+            src="vWom.png"
             w={["178px"]}
             h={["192px"]}
             mt={["-100px"]}
