@@ -1,7 +1,8 @@
-import { Flex, Heading, Text, Box } from "@chakra-ui/react";
+import { Flex, Heading, Text, Box,useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 
 export default function AboutWomen() {
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
   return (
     <Flex
       direction="column"
@@ -11,25 +12,25 @@ export default function AboutWomen() {
       color="black"
       alignItems="center"
     >
-      <Box mt={["16%","8%"]} w={["90vw","50vw"]} textAlign={"center"} >
-        <Heading textAlign="center" m="auto" w={["90vw","40vw"]}>
+      <Box mt={isLargerThan800?"8%":"16%"} w={isLargerThan800?"50vw":"90vw"} textAlign={"center"} >
+        <Heading textAlign="center" m="auto" w={!isLargerThan800?"90vw":"40vw"}>
           WOMEN'S RESILIENCE IN RADIANCE
         </Heading>
-        <Text mt={["20px"]} fontSize={["16px","20px"]} >
+        <Text mt={["20px"]} fontSize={!isLargerThan800?"16px":"20px"} >
           From shaping societies,nurturing families,contributing in various
           fields,
           <br /> Womenhood is about strength,resilience, and navigating life
           with grace.
         </Text>
       </Box>
-      <Box mt={["8%","4%"]} w={["90vw","50vw"]} textAlign={"center"} >
-        <Heading textAlign="center" m="auto" w={["90vw","40vw"]} fontWeight="500">
+      <Box mt={!isLargerThan800?"8%":"4%"} w={!isLargerThan800?"90vw":"50vw"} textAlign={"center"} >
+        <Heading textAlign="center" m="auto" w={!isLargerThan800?"90vw":"40vw"} fontWeight="500">
           LET'S CELEBRATE THE ESSESNCE OF
         </Heading>
-        <Heading textAlign="center" m="auto" w={["90vw","40vw"]}>
+        <Heading textAlign="center" m="auto" w={!isLargerThan800?"90vw":"40vw"}>
           WOMENHOOD.
         </Heading>
-        <Text mt={["20px"]} fontSize={["16px","20px"]}>
+        <Text mt={["20px"]} fontSize={!isLargerThan800?"16px":"20px"}>
           This Women's Day honours women's strength, resilience, and
           achievements.
           <br /> Women, being our cute daughters, sweet sisters, loving wives,
