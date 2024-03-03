@@ -32,7 +32,7 @@ export default function Navbar() {
       bg="transparent"
       borderBottom="1px solid white"
       position="absolute"
-      overflow="hidden"
+      // overflow="hidden"
     >
       <Link to="/">
         <Image src="logo.png" w={["90px"]} mr={["20px"]} />
@@ -135,30 +135,30 @@ export default function Navbar() {
             icon={<RxHamburgerMenu />}
             variant="outline"
             color="white"
-            ml="200px"
+            ml="45vw"
           />
-          <MenuList>
-            <MenuItem>
+          <MenuList bg="transparent" backdropFilter="blur(8px)" color="white" >
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/">
                 <Text>Home</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/about">
                 <Text>About Us</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/competition">
                 <Text>Competitions</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/register">
                 <Text>Registration</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/contactUs">
                 <Text>Contact Us</Text>
               </Link>

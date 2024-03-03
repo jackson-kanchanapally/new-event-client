@@ -5,7 +5,7 @@ export default function Ticket() {
     <Flex direction="column">
       <Box
         w="100vw"
-        h={["100vh", "100vh"]}
+        h={["82vh", "100vh"]}
         backgroundImage="home_banner.png"
         backgroundSize="cover"
         backgroundPosition="center"
@@ -13,12 +13,12 @@ export default function Ticket() {
         overflowX="hidden"
       >
         <Flex
-          w="100vw"
+          w={["90vw", "100vw"]}
           h="64vh"
           justifyContent="center"
           direction="column"
-          ml={["10px", "240px"]}
-          mt={["", "150px"]}
+          ml={["5px", "240px"]}
+          mt={["50px", "150px"]}
         >
           <Box fontSize={["16px"]} ml="30px" mt="150px">
             <Text color="#FFA800" fontSize={["", "36px"]} fontFamily="oswald">
@@ -29,7 +29,7 @@ export default function Ticket() {
               color="white"
               fontWeight="500"
               fontFamily="oswald"
-              lineHeight={["100px"]}
+              lineHeight={["60px", "100px"]}
             >
               Miss VS Ms
             </Heading>
@@ -42,7 +42,7 @@ export default function Ticket() {
               Women's Day 2024
             </Heading>
             <Box mt={["20px"]} color="#B0B0B0">
-              <Text fontSize="16px">
+              <Text fontSize={["16px"]}>
                 3 Day FREE Event For this Women's Day For all the Daughters,
               </Text>
               <Text>Mothers,Sisters,Friends, and YOU!</Text>

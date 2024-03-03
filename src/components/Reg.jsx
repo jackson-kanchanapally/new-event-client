@@ -43,7 +43,6 @@ const Reg = () => {
     company: "",
     msg: "",
   });
-  // eslint-disable-next-line no-unused-vars
   const [generatedNumber, setGenNumber] = useState("");
   const handleGenerateNumber = async (values) => {
     try {
@@ -110,20 +109,29 @@ const Reg = () => {
     >
       <Flex
         w="100vw"
-        h={["572px", "572px"]}
+        h={["302px", "572px"]}
         backgroundImage="low.png"
         backgroundSize="cover"
         backgroundPosition="center"
         color="white"
         overflowX="hidden"
-        pl="280px"
+        pl={["10px", "280px"]}
         alignItems="center"
       >
-        <Heading pt="120px" fontSize="60px">
+        <Heading
+          pt="120px"
+          textShadow="2px 2px 4px rgba(0, 0, 0, 0.4)"
+          fontSize={["40px", "60px"]}
+        >
           Registration
         </Heading>
       </Flex>
-      <Flex direction="column" w="50%" pt="70px" pb="170px">
+      <Flex
+        direction="column"
+        w={["85vw", "50%"]}
+        pt={["50px", "70px"]}
+        pb={["50px", "170px"]}
+      >
         <Heading
           color="black"
           mb="4"
@@ -148,7 +156,7 @@ const Reg = () => {
         >
           <Box color="black" pt="10px">
             <Form>
-              <Flex justifyContent="center">
+              <Flex justifyContent="center" direction={["column", "row"]}>
                 <Box>
                   <FormLabel>Name</FormLabel>
                   <Field
@@ -159,6 +167,7 @@ const Reg = () => {
                       height: "48px",
                       width: "305.22px",
                       borderRadius: "15px",
+                      color: "black",
                     }}
                     placeholder="Name"
                     name="name"
@@ -174,7 +183,7 @@ const Reg = () => {
                     }}
                   />
                 </Box>
-                <Box ml="10px">
+                <Box ml={["0", "10px"]}>
                   <FormLabel>Company</FormLabel>
                   <Field
                     as={Input}
@@ -184,6 +193,7 @@ const Reg = () => {
                       height: "48px",
                       width: "305.22px",
                       borderRadius: "15px",
+                      color: "black",
                     }}
                     placeholder="Company"
                     name="company"
@@ -200,7 +210,7 @@ const Reg = () => {
                   />
                 </Box>
               </Flex>
-              <Flex justifyContent="center">
+              <Flex justifyContent="center" direction={["column", "row"]}>
                 <Box>
                   {" "}
                   <FormLabel>Phone</FormLabel>
@@ -213,6 +223,7 @@ const Reg = () => {
                       height: "48px",
                       width: "305.22px",
                       borderRadius: "15px",
+                      color: "black",
                     }}
                     name="mobileNumber"
                     required
@@ -227,7 +238,7 @@ const Reg = () => {
                     }}
                   />
                 </Box>
-                <Box ml="10px">
+                <Box ml={["0", "10px"]}>
                   {" "}
                   <FormLabel>Email</FormLabel>
                   <Field
@@ -238,6 +249,7 @@ const Reg = () => {
                       height: "48px",
                       width: "305.22px",
                       borderRadius: "15px",
+                      color: "black",
                     }}
                     placeholder="your email id"
                     name="email"
@@ -254,7 +266,7 @@ const Reg = () => {
                   />
                 </Box>
               </Flex>
-              <Flex justifyContent="center">
+              <Flex justifyContent="center" direction={["column", "row"]}>
                 <Box>
                   <FormLabel>Date</FormLabel>
                   <Field
@@ -268,6 +280,7 @@ const Reg = () => {
                       height: "48px",
                       width: "305.22px",
                       borderRadius: "15px",
+                      color: "black",
                     }}
                     required
                   >
@@ -285,7 +298,7 @@ const Reg = () => {
                     }}
                   />
                 </Box>
-                <Box ml="10px">
+                <Box ml={[0, "10px"]}>
                   <FormLabel>Select Age</FormLabel>
                   <Field
                     as={Select}
@@ -296,6 +309,7 @@ const Reg = () => {
                       width: "305.22px",
                       height: "48px",
                       borderRadius: "15px",
+                      color: "black",
                     }}
                     name="ageGroup"
                     required
@@ -319,7 +333,7 @@ const Reg = () => {
                 </Box>
               </Flex>
 
-              <Flex direction="column" alignItems="center">
+              <Flex direction={["column"]} alignItems="center">
                 <Box>
                   <FormLabel>Message</FormLabel>
                   <Field
@@ -327,11 +341,12 @@ const Reg = () => {
                     mb="3"
                     name="msg"
                     bg="#EEEEEE"
-                    style={{
-                      width: "620px",
-                      height: "120px",
-                      borderRadius: "15px",
-                    }}
+                    w={["305.22px", "620px"]}
+                    // style={{
+                    //   width: "620px",
+                    //   height: "120px",
+                    //   borderRadius: "15px",
+                    // }}
                     required
                   />
                   <ErrorMessage
@@ -349,7 +364,7 @@ const Reg = () => {
                   bg="#FFA800"
                   color="black"
                   fontSize="16px"
-                  w="620px"
+                  w={["305.22px", "620px"]}
                 >
                   Book Now
                 </Button>

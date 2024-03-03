@@ -12,7 +12,6 @@ export default function Home() {
         <Ticket />
         <Box>
           <SachiEvent />
-          {/* <JoinUs/> */}
           <AboutUs />
           <AboutWomen />
         </Box>

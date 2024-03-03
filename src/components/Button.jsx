@@ -3,8 +3,8 @@ import { Box, Circle, Flex } from "@chakra-ui/react";
 export default function ButtonD() {
   return (
     <Flex
-      h={["60px"]}
-      w={["230px"]}
+      h={["50px", "60px"]}
+      w={["180px", "230px"]}
       mt="30px"
       bg="
     #ffa800"
@@ -20,8 +20,8 @@ export default function ButtonD() {
       <Circle
         fontSize={["25px"]}
         bg="#D98F00"
-        w={["60px"]}
-        h={["60px"]}
+        w={["50px", "60px"]}
+        h={["50px", "60px"]}
         textAlign="center"
         rounded="100%"
         fontWeight={["bold"]}
@@ -38,7 +38,11 @@ export default function ButtonD() {
         alignItems="center"
         rounded="5px"
       >
-        <Box ml={["25px"]}   fontFamily="oswald"  fontSize="18px">
+        <Box
+          ml={["18px", "25px"]}
+          fontFamily="oswald"
+          fontSize={["16px", "18px"]}
+        >
           DISCOVER MORE
         </Box>
       </Flex>
