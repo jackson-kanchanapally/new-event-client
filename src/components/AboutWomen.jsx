@@ -18,10 +18,10 @@ export default function AboutWomen() {
       color="black"
       alignItems="center"
     >
-      <Image src="vec.png" pos="absolute" w={["360px","464px"]} left="0" mt={["50%","100px"]} opacity={["50%","100%"]} />
+      <Image src="vec.png" pos="absolute" w={["360px","464px"]} left="0" mt={["50%","100px"]} opacity={["35%","100%"]} />
       <Box pos={["relative"]}>
         <Box
-          mt={isLargerThan800 ? "8%" : "16%"}
+          mt={isLargerThan800 ? "8%" : "25%"}
           w={isLargerThan800 ? "50vw" : "90vw"}
           textAlign={"center"}
         >

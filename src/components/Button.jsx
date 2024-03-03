@@ -24,9 +24,9 @@ export default function ButtonD() {
         h={["50px", "60px"]}
         textAlign="center"
         rounded="100%"
-        fontWeight={["bold"]}
+        fontWeight={["600"]}
         color="black"
-        pb={["4px"]}
+        pb={["0","4px"]}
       >
         +
       </Circle>
