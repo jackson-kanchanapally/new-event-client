@@ -83,10 +83,11 @@ export default function SachiEvent() {
           </Box>
           <Image
             src="vWom.png"
-            w={["178px"]}
-            h={["192px"]}
+            w={["100px","178px"]}
+            h={["","192px"]}
             mt={["-100px"]}
-            right={["550px"]}
+            mb={["380px","0"]}
+            right={["12px","550px"]}
             pos="absolute"
           />
           {isLargerThan800 && (
