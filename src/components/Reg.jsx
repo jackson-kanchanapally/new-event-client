@@ -332,7 +332,7 @@ const Reg = () => {
               </Flex>
 
               <Flex direction={["column"]} alignItems="center">
-                <Box w={["345.22px", "620px"]}>
+                <Box w={["85vw", "620px"]}>
                   <FormLabel>Message</FormLabel>
                   <Field
                     as={Textarea}
@@ -366,7 +366,6 @@ const Reg = () => {
                   Book Now
                 </Button>
               </Flex>
-
               <Box></Box>
             </Form>
           </Box>
