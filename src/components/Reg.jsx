@@ -115,7 +115,7 @@ const Reg = () => {
         backgroundPosition="center"
         color="white"
         overflowX="hidden"
-        pl={["10px", "280px"]}
+        pl={["30px", "280px"]}
         alignItems="center"
       >
         <Heading
@@ -157,7 +157,7 @@ const Reg = () => {
           <Box color="black" pt="10px">
             <Form>
               <Flex justifyContent="center" direction={["column", "row"]}>
-                <Box>
+                <Box w={["full", "305.6px"]}>
                   <FormLabel>Name</FormLabel>
                   <Field
                     as={Input}
@@ -165,7 +165,6 @@ const Reg = () => {
                     bg="#EEEEEE"
                     style={{
                       height: "48px",
-                      width: "305.22px",
                       borderRadius: "15px",
                       color: "black",
                     }}
@@ -183,7 +182,7 @@ const Reg = () => {
                     }}
                   />
                 </Box>
-                <Box ml={["0", "10px"]}>
+                <Box ml={["0", "10px"]} w={["full", "305.6px"]}>
                   <FormLabel>Company</FormLabel>
                   <Field
                     as={Input}
@@ -191,7 +190,7 @@ const Reg = () => {
                     bg="#EEEEEE"
                     style={{
                       height: "48px",
-                      width: "305.22px",
+
                       borderRadius: "15px",
                       color: "black",
                     }}
@@ -211,7 +210,7 @@ const Reg = () => {
                 </Box>
               </Flex>
               <Flex justifyContent="center" direction={["column", "row"]}>
-                <Box>
+                <Box w={["full", "305.6px"]}>
                   {" "}
                   <FormLabel>Phone</FormLabel>
                   <Field
@@ -221,7 +220,7 @@ const Reg = () => {
                     bg="#EEEEEE"
                     style={{
                       height: "48px",
-                      width: "305.22px",
+
                       borderRadius: "15px",
                       color: "black",
                     }}
@@ -238,7 +237,7 @@ const Reg = () => {
                     }}
                   />
                 </Box>
-                <Box ml={["0", "10px"]}>
+                <Box ml={["0", "10px"]} w={["full", "305.6px"]}>
                   {" "}
                   <FormLabel>Email</FormLabel>
                   <Field
@@ -247,7 +246,7 @@ const Reg = () => {
                     bg="#EEEEEE"
                     style={{
                       height: "48px",
-                      width: "305.22px",
+
                       borderRadius: "15px",
                       color: "black",
                     }}
@@ -267,7 +266,7 @@ const Reg = () => {
                 </Box>
               </Flex>
               <Flex justifyContent="center" direction={["column", "row"]}>
-                <Box>
+                <Box w={["full", "305.6px"]}>
                   <FormLabel>Date</FormLabel>
                   <Field
                     as={Select}
@@ -278,7 +277,7 @@ const Reg = () => {
                     color="#929598"
                     style={{
                       height: "48px",
-                      width: "305.22px",
+
                       borderRadius: "15px",
                       color: "black",
                     }}
@@ -298,7 +297,7 @@ const Reg = () => {
                     }}
                   />
                 </Box>
-                <Box ml={[0, "10px"]}>
+                <Box ml={[0, "10px"]} w={["full", "305.6px"]}>
                   <FormLabel>Select Age</FormLabel>
                   <Field
                     as={Select}
@@ -306,7 +305,6 @@ const Reg = () => {
                     placeholder=" "
                     bg="#EEEEEE"
                     style={{
-                      width: "305.22px",
                       height: "48px",
                       borderRadius: "15px",
                       color: "black",
@@ -334,14 +332,13 @@ const Reg = () => {
               </Flex>
 
               <Flex direction={["column"]} alignItems="center">
-                <Box>
+                <Box w={["345.22px", "620px"]}>
                   <FormLabel>Message</FormLabel>
                   <Field
                     as={Textarea}
                     mb="3"
                     name="msg"
                     bg="#EEEEEE"
-                    w={["305.22px", "620px"]}
                     // style={{
                     //   width: "620px",
                     //   height: "120px",
@@ -364,7 +361,7 @@ const Reg = () => {
                   bg="#FFA800"
                   color="black"
                   fontSize="16px"
-                  w={["305.22px", "620px"]}
+                  w={["full", "620px"]}
                 >
                   Book Now
                 </Button>
