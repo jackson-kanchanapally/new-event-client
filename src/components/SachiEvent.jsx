@@ -1,19 +1,24 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import React from "react";
 import ButtonD from "./Button";
 
 export default function SachiEvent() {
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
   return (
     <Flex
       w="100vw"
-      // mt={["5px"]}
       direction="column"
       color="black"
       mb={["30px"]}
       bg="white"
-      h={["100vh"]}
-      // pl={["20px", "270px"]}
-      // alignItems={["center", "center"]}
+      h={["80vh","100vh"]}
     >
       <Image
         src="Schi.png"
@@ -26,7 +31,6 @@ export default function SachiEvent() {
       <Box w={["85%", "70%"]} pl={["20px", "270px"]} pt={["40px", "100px"]}>
         <Box>
           <Text
-            // letterSpacing="0.2em"
             fontSize={["15px", "18px"]}
             color="#FFA800"
             fontFamily="oswald"
@@ -35,12 +39,12 @@ export default function SachiEvent() {
           </Text>
           <Heading
             fontFamily="oswald"
-            fontSize={["25px", "32px"]}
+            fontSize={["28px", "32px"]}
             fontWeight="400"
           >
             Ms. Vs Mrs. Event
           </Heading>
-          <Text fontFamily="oswald" fontSize={["16px", "18px"]} mt={["10px"]}>
+          <Text fontFamily="oswald" fontSize={["15px", "18px"]} mt={["10px"]}>
             A Grand 3-Day Event at Chennai. March 8, 9, & 10.
           </Text>
         </Box>
@@ -54,7 +58,6 @@ export default function SachiEvent() {
             <Flex mb={["0", "15px"]}>
               <Text
                 mt="40px"
-                // fontSize="20px"
                 mb="18px"
                 textAlign={["justify", ""]}
               >
@@ -86,14 +89,16 @@ export default function SachiEvent() {
             right={["550px"]}
             pos="absolute"
           />
-          <Image
-            src="college.png"
-            w={["470px"]}
-            h={["548px"]}
-            right={["100px"]}
-            pos="absolute"
-            mt={["-100px"]}
-          />
+          {isLargerThan800 && (
+            <Image
+              src="college.png"
+              w={["470px"]}
+              h={["548px"]}
+              right={["100px"]}
+              pos="absolute"
+              mt={["-100px"]}
+            />
+          )}
         </Flex>
       </Box>
     </Flex>

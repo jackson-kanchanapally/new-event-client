@@ -13,13 +13,13 @@ export default function AboutUs() {
   return (
     <Flex
       pb={["35px"]}
-      mt={["85px"]}
+      mt={["40px","85px"]}
       alignItems="center"
       direction="column"
-      ml={["15px", "0"]}
+      // ml={["5px", "0"]}
       bg="11161E"
-      h={!isLargerThan800 ? "135.5vh" : "75vh"}
-      w={["90vw", "100vw"]}
+      h={!isLargerThan800 ? "115.5vh" : "75vh"}
+      w={["100vw", "100vw"]}
       position="relative"
     >
       <Box>
@@ -40,7 +40,7 @@ export default function AboutUs() {
         >
           <Flex
             mt={!isLargerThan800 ? "20px" : "65px"}
-            ml={!isLargerThan800 ? "15%" : "0"}
+            ml={!isLargerThan800 ? "0" : "0"}
             justifyContent={!isLargerThan800 ? "" : "space-between"}
             alignItems={!isLargerThan800 ? "center" : ""}
             direction={!isLargerThan800 ? "column" : "row"}
@@ -134,7 +134,7 @@ export default function AboutUs() {
           </Flex>
         </Box>
       </Box>
-      <Box pos="absolute" bottom="-29">
+      <Box pos="absolute" bottom="-26">
         <ButtonD />
       </Box>
     </Flex>
